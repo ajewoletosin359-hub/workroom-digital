@@ -293,10 +293,9 @@ export default function SelectedWork() {
             Selected work
           </h2>
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-secondary">
-            A few examples of the systems and digital experiences I can build.
-            Finished video pieces play above in the AI Video service; finished
-            automation and SEO work appears below. Entries marked as concept
-            projects are capability demonstrations, not client work.
+            Real systems and digital experiences: finished video pieces play
+            above in the AI Video service, with automation and SEO work
+            detailed below — every entry expandable.
           </p>
         </Reveal>
         <div className="mt-12 space-y-14 md:space-y-20">

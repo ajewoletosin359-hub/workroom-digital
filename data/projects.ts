@@ -172,32 +172,8 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "contentflow-ai",
-    index: "06",
-    title: "ContentFlow AI",
-    category: "video",
-    categoryLabel: "AI Video",
-    concept: true,
-    summary:
-      "A repeatable AI-assisted content workflow for turning ideas into short-form marketing videos.",
-    role: "Concept & production — format, script system, edit workflow",
-    timeline: "Under 1 week",
-    tools: ["AI video tools", "CapCut", "Canva"],
-    problem:
-      "Creating consistent video content can take too much time for a small business owner — every video starts from zero, so publishing stalls.",
-    approach:
-      "Create a repeatable process for planning, scripting, generating, editing and preparing short-form content, so one idea reliably becomes finished videos.",
-    solution:
-      "An AI-assisted video production workflow designed around repeatable content creation: script templates, a standard edit pass, and per-platform versions from a single master.",
-    outcome:
-      "Demonstration project — format, script-to-video workflow and sample outputs. Finished video pieces play in the AI Video service section above.",
-    mediaLabel: "[Video preview]",
-    mediaKind: "video",
-    layout: "split-right",
-  },
-  {
     slug: "local-search-growth",
-    index: "07",
+    index: "06",
     title: "SEO Audit: Health & Findings",
     category: "seo",
     categoryLabel: "SEO",

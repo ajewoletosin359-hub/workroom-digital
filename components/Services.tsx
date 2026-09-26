@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { services } from "@/data/services";
@@ -37,27 +38,36 @@ function VideoVisual() {
   return <VideoShowcase />;
 }
 
-/* 03 visual: search-result wireframe — structure, not fake rankings. */
+/* 03 visual: the real audit screenshots — same files as Selected Work. */
 function SeoVisual() {
   return (
-    <div className="media-frame w-full bg-surface p-6 md:p-7" aria-hidden="true">
-      <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-secondary">
-        Page structure
-      </p>
-      <div className="mt-5 space-y-4">
-        {[
-          { w: "w-3/4", h: "h-3.5" },
-          { w: "w-full", h: "h-2" },
-          { w: "w-5/6", h: "h-2" },
-          { w: "w-2/3", h: "h-2" },
-        ].map((b, i) => (
-          <div key={i} className="space-y-2">
-            <div className={`${b.w} ${b.h} rounded-sm bg-white/[0.12]`} />
-            {i > 0 && <div className="h-1.5 w-1/3 rounded-sm bg-white/[0.06]" />}
-          </div>
-        ))}
-      </div>
-      <p className="eyebrow mt-6">Titles — structure — internal links</p>
+    <div className="grid gap-6">
+      <figure className="media-frame relative bg-[#0d1218]">
+        <Image
+          src="/seo/audit-overview.webp"
+          alt="SEO audit overview report showing overall site health"
+          width={1536}
+          height={1024}
+          className="h-auto w-full"
+          sizes="(max-width: 1024px) 100vw, 50vw"
+        />
+        <figcaption className="border-t border-white/10 px-5 py-3 font-mono text-[11px] text-muted">
+          Audit overview — site health at a glance
+        </figcaption>
+      </figure>
+      <figure className="media-frame relative bg-[#0d1218]">
+        <Image
+          src="/seo/audit-findings.webp"
+          alt="Detailed SEO findings across technical, on-page and content areas"
+          width={1536}
+          height={1024}
+          className="h-auto w-full"
+          sizes="(max-width: 1024px) 100vw, 50vw"
+        />
+        <figcaption className="border-t border-white/10 px-5 py-3 font-mono text-[11px] text-muted">
+          Detailed findings with recommended actions
+        </figcaption>
+      </figure>
     </div>
   );
 }

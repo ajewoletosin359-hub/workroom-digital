@@ -28,7 +28,7 @@ const sans = localFont({
   display: "swap",
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://workroom-digital.pages.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),

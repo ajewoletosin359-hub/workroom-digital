@@ -36,7 +36,7 @@ sizes. Optimized copies live under `public/`:
 - Automation: `public/automation/` (video, screenshots, PDF guides)
 - SEO: `public/seo/*.webp`
 - Fonts (self-hosted): `public/fonts/*.woff2`
-- OG image: `public/images/social/og-default.png` (1200×630) — SVG placeholder provided
+- OG image: `public/images/social/og-default.png` (1200×630)
 
 ## Honesty rules enforced in code
 

@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { site } from "@/data/site";
+import { faqs } from "@/data/content";
 
 // Self-hosted fonts — no runtime fetch to Google Fonts (which hangs on
 // flaky networks and blocks stylesheet compilation).
@@ -47,19 +48,39 @@ export const metadata: Metadata = {
     title: "Workroom Digital — AI Automation, AI Video & SEO",
     description:
       "Practical automation, video and SEO systems for small businesses.",
-    images: [{ url: "/images/social/og-default.svg", width: 1200, height: 630 }],
+    images: [{ url: "/images/social/og-default.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Workroom Digital — AI Automation, AI Video & SEO",
     description: "Automate. Create. Grow. Practical digital systems for small businesses.",
-    images: ["/images/social/og-default.svg"],
+    images: ["/images/social/og-default.png"],
   },
   robots: { index: true, follow: true },
   icons: { icon: "/favicon.svg" },
+  alternates: { canonical: baseUrl },
+};
+
+export const viewport = {
+  themeColor: "#11161C",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Workroom Digital",
+    url: baseUrl,
+  };
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -88,6 +109,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
         <Navigation />
         <main id="main">{children}</main>

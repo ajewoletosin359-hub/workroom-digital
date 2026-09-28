@@ -86,3 +86,23 @@ export const workingPrinciples = [
     text: "Build systems that can be used and improved in the real world.",
   },
 ];
+
+// Frequently asked questions — honest answers only, no invented pricing.
+export const faqs = [
+  {
+    q: "How do we start?",
+    a: "Message me on WhatsApp, email, or the contact form with a few sentences about the problem. We have a short call, and you get a one-page plan: what gets built and how we will judge that it worked.",
+  },
+  {
+    q: "How long does work take?",
+    a: "Small automations, videos, and audits typically land within one to two weeks. Larger systems are split into milestones so you see working results early.",
+  },
+  {
+    q: "Do I need technical skills to run what you build?",
+    a: "No. Systems are documented and handed over in plain language, built on tools you already use — spreadsheets, inboxes, and off-the-shelf platforms.",
+  },
+  {
+    q: "How much does it cost?",
+    a: "It depends on scope. Describe the problem and you will get an honest fixed quote — no retainers full of reports, no surprise line items.",
+  },
+];

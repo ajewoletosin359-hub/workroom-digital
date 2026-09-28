@@ -16,7 +16,7 @@ const config: Config = {
         border: "#3A4148",
         primary: "#F1F1EF",
         secondary: "#B5B7B8",
-        muted: "#777D82",
+        muted: "#92989E",
         accent: "#D6D4CE",
         success: "#7FAE8B",
       },

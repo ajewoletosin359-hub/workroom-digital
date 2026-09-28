@@ -6,6 +6,7 @@ import SelectedWork from "@/components/SelectedWork";
 import Tools from "@/components/Tools";
 import Process from "@/components/Process";
 import WhyWorkWithMe from "@/components/WhyWorkWithMe";
+import Faq from "@/components/Faq";
 import Contact from "@/components/Contact";
 
 // Single public page. Testimonials stay out until verified client
@@ -21,6 +22,7 @@ export default function Home() {
       <Tools />
       <Process />
       <WhyWorkWithMe />
+      <Faq />
       <Contact />
     </>
   );

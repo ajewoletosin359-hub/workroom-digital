@@ -42,7 +42,16 @@ body {
   color: var(--text-primary);
   font-feature-settings: "ss01", "cv05";
   text-rendering: optimizeLegibility;
+  /* Failsafe against sideways scroll: `clip` on BOTH html and body.
+     Mobile Safari ignores body-only overflow-x, letting decorative
+     layers (contours, numerals) drag the page sideways. */
   overflow-x: hidden;
+  overflow-x: clip;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 ::selection {

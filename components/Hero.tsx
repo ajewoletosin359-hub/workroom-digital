@@ -53,7 +53,7 @@ export default function Hero() {
         <Reveal delay={80}>
           <h1
             id="hero-heading"
-            className="mt-6 font-display text-[clamp(4.5rem,15vw,12rem)] uppercase leading-[0.86] tracking-tight text-primary"
+            className="mt-6 font-display text-[clamp(3.9rem,15vw,12rem)] uppercase leading-[0.86] tracking-tight text-primary"
           >
             Automate.
             <br />
